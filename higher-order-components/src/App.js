@@ -4,10 +4,16 @@ import DummyComponent from './dummyComponent';
 import './App.css';
 
 class App extends Component {
+
+  handler(){
+    console.log('refs', this.refs.myref);   //points to hoc
+  }
   render() {
     return (
       <div>
-        <DummyComponent/>
+        <DummyComponent ref="myref"/>
+        {/* <DummyComponent/> */}
+        <button onClick={this.handler.bind(this)}>check ref here</button>
       </div>
     );
   }

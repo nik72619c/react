@@ -8,10 +8,13 @@ import hoc from './hoc';
         console.log("props obtained from hoc", this.props);
     }
 
+
+
     render(){
         return (
             <div>
                 this is a dummy component ! 
+                
              </div>
         )
     }
