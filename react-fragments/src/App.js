@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <>   //react fragment shorter syntax
+      <>   {/*react fragment shorter syntax*/}
 
         <p>this is a p tag</p>
         <p>another p tag without being wrapped</p>
