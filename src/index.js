@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Toggle } from "./toggle";
+//import { Toggle } from "./toggle";
+const Toggle=React.lazy(()=>{import('./toggle')}); //applying lazy loading 
 
 import "./styles.css";
 
