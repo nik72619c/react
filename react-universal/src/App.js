@@ -5,11 +5,7 @@ class App extends React.Component{
     render(){
         return(
             <Switch>
-                <Route path="/home" render={
-                    props=>{
-                        <Home {...props} />
-                    }
-                }/>
+                <Route path="/home" component={Home}/>
             </Switch>
         )
     }

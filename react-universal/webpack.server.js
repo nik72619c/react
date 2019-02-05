@@ -18,15 +18,11 @@ module.exports={
                 exclude: '/node_modules/',
                 options:{
                     presets:[
-                        'react','stage-0',[
-                            'env',{
-                                target:{browsers:['last 2 versions']}
-                            }
-                        ]
+                        '@babel/react','@babel/env'
                     ]
                 }
             }
         ]
     },
     externals: [webpackNodeExternals()]
-}
+};
