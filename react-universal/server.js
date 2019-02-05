@@ -10,8 +10,8 @@ const PORT=process.env.PORT || 3000;
 import bodyParser from 'body-parser';
 
 app.use(bodyParser.json());
-app.use(express.static('build'));
-app.get('/*', (req,res)=>{
+app.use(express.static('build/public'));
+app.get('/', (req,res)=>{
 
 const content=ReactDOMServer.renderToString(<StaticRouter location={req.url}>
     <App />
@@ -23,7 +23,9 @@ const html=`
     </head>
     <body>
     <div id="root">${content}</div>
+    <script src="client_bundle.js"></script>
    </body>
+   
 </html>
 `
     res.send(html);
