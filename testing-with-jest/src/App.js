@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  handleClick(){
+    return "handleClick";
+  }
   render() {
     return (
       <div className="App">
@@ -15,7 +18,7 @@ class App extends Component {
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer" onClick={this.handleClick.bind(this)}
           >
             Learn React
           </a>
